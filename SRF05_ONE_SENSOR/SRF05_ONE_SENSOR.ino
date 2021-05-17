@@ -1,8 +1,8 @@
 #include <HCSR04.h>
-#include <Packetizer.h>
+#include "Packetizer.h"
 
 HCSR04 hc(5,6); // first argument is trig pin, second is the echo
-Packetizer pack1(0); // arg: address of hte sensor (0-127), use it to labeling sensors
+Packetizer pack1(0); // arg: address of the sensor (0-127), use it to labeling sensors, 0 is the first, 1 is the second, and so...
 
 void setup() {
   Serial.begin(9600);
@@ -17,11 +17,3 @@ void loop() {
   delay(100);
   
 }
-
-/*
-void packetize(byte *packet, int value, byte addr) {
-  packet[0] = ((value & 16256) >> 7) + 128;
-  packet[1] = (value & 127) + 128;
-  packet[2] = addr;
-}
-*/
