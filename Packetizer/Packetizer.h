@@ -4,19 +4,6 @@
 
 #include <Arduino.h>
 
-/*
-class Packetizer 
-{
-  
-  public:
-    Packetizer(byte addr);
-    void packetize(int value);
-    byte * get_pack();
-
-  private:
-    byte *message;
-};
-*/
 class Packetizer
 {
 public:
