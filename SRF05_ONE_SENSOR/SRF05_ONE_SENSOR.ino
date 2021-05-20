@@ -13,6 +13,7 @@ void loop() {
 
   // pack1.packetize(value) return a byte pointer
   Serial.write(pack1.packetize(value), pack1.SIZE);  
+  //Serial.println(value);
 
   delay(100);
   
