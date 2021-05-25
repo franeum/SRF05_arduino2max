@@ -1,4 +1,4 @@
-#N canvas 624 85 1272 636 12;
+#N canvas 628 85 1272 636 12;
 #X obj 100 100 moses 128;
 #X obj 100 129 t b f;
 #X obj 100 198 vs.group 10;
@@ -15,8 +15,7 @@
 #X floatatom 340 90 5 0 0 0 - - -, f 5;
 #X obj 100 489 route 0;
 #X obj 340 120 nbx 7 100 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-10 #fcfcfc #000000 #000000 0 256 0;
-#X obj 130 70 print;
+10 #fcfcfc #000000 #000000 1668 256 0;
 #X connect 0 0 1 0;
 #X connect 0 1 2 0;
 #X connect 1 0 2 0;
@@ -32,7 +31,6 @@
 #X connect 8 0 9 1;
 #X connect 9 0 11 0;
 #X connect 10 0 0 0;
-#X connect 10 0 16 0;
 #X connect 11 0 12 0;
 #X connect 11 1 12 1;
 #X connect 12 0 14 0;
