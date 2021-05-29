@@ -16,4 +16,4 @@ private:
   byte message[3];
 };
 
-#endif Packetizer_h
+#endif

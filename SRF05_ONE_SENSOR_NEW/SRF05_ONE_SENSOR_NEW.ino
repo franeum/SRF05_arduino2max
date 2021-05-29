@@ -23,6 +23,6 @@ void loop() {
   
   Serial.println((int)hc.dist());
   
-  delay(25);
+  delay(50);
   
 }
