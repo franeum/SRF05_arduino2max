@@ -37,7 +37,7 @@ int decode_bytes(byte* values)
     byte left = (*values << 8);
     byte right = *(values + 1);
 
-    return (uint16_t)(left || right);
+    return (uint16_t)(left | right);
 }
 
 void loop()
