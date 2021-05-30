@@ -23,8 +23,11 @@ void setup() {
 }
 
 void loop() {
-  for (int i=0; i<NR_OF_SENSORS; i++) 
+  for (int i=0; i<NR_OF_SENSORS; i++) {
     Serial.write(pack[i]->packetize(hc.dist(i)), pack[i]->SIZE);
+    //Serial.write(pack[i]->packetize(25), pack[i]->SIZE);
+    //pack[i]->packetize(1000);
+  }
 
   delay(DELAY_TIME);
   
